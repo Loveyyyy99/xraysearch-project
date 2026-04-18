@@ -1,0 +1,18 @@
+# Render.com deployment config (free tier)
+services:
+  - type: web
+    name: xraysearch-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: CXR_VIT_MODEL
+        value: google/vit-base-patch16-224-in21k
+      - key: IMAGE_BASE_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 10
