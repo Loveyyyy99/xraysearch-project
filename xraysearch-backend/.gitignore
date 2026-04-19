@@ -3,9 +3,7 @@ __pycache__/
 .env
 venv/
 .venv/
-data/hnsw_index.bin
-data/image_ids.json
-data/nih_metadata.db
 data/images/
 *.egg-info/
 .DS_Store
+
