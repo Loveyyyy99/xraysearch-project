@@ -30,7 +30,4 @@ HNSW_EF_SEARCH      = 100
 IMAGE_BASE_URL = os.getenv("IMAGE_BASE_URL", "")
 
 # CORS
-ALLOWED_ORIGINS = os.getenv(
-    "ALLOWED_ORIGINS",
-    "http://localhost:3000,https://xraysearch.vercel.app"
-).split(",")
+ALLOWED_ORIGINS = ["*"]
