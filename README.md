@@ -26,7 +26,10 @@
 
 ### Search Results
 <!-- TODO: add screenshot — similarity results with disease tags -->
-![Results](.github/screenshots/results.png)
+<img width="1917" height="870" alt="result" src="https://github.com/user-attachments/assets/e43b2b25-b496-4b2f-99ca-8e1f037d5db2" />
+<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/6b9e262c-b189-49f7-b648-d33d985a62ad" />
+<img width="1917" height="867" alt="image" src="https://github.com/user-attachments/assets/e515f73c-bc5a-4400-8242-e8a80de9320e" />
+
 
 ---
 
