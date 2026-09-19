@@ -12,11 +12,14 @@
 
 ### Landing Page
 <!-- TODO: add screenshot -->
-![Landing page](.github/screenshots/landing.png)
+<img width="1600" height="760" alt="landing" src="https://github.com/user-attachments/assets/b454d0d3-256a-4d63-9420-362d16ec91de" />
+<img width="1600" height="735" alt="landing" src="https://github.com/user-attachments/assets/95f89f99-b5f2-4222-a19c-d04da13fa2f9" />
+<img width="1600" height="701" alt="landing" src="https://github.com/user-attachments/assets/53e08b8d-117e-4774-bd47-005239ede3ca" />
+<img width="902" height="832" alt="landing" src="https://github.com/user-attachments/assets/22d1c629-f82c-4c0e-83ed-82e51917c709" />
 
 ### Search Dashboard
 <!-- TODO: add screenshot — upload panel, filters, results grid -->
-![Dashboard](.github/screenshots/dashboard.png)
+<img width="1555" height="868" alt="dashboard" src="https://github.com/user-attachments/assets/592525c8-41f9-48c3-8744-e3ee33c55876" />
 
 ### Search Results
 <!-- TODO: add screenshot — similarity results with disease tags -->
