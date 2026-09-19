@@ -192,10 +192,4 @@ NIH ChestX-ray14 · Wang et al., 2017
 112,120 frontal-view X-rays from 30,805 patients across 14 disease labels.  
 Images are de-identified and cleared for academic research use.
 
-> ⚠️ **This is a research tool only — not a clinical diagnostic device.**
-
----
-
-## License
-
-MIT
+> **This is a research tool only — not a clinical diagnostic device.**
