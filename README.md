@@ -26,10 +26,16 @@
 
 ### Search Results
 <!-- TODO: add screenshot — similarity results with disease tags -->
-<img width="1917" height="870" alt="result" src="https://github.com/user-attachments/assets/e43b2b25-b496-4b2f-99ca-8e1f037d5db2" />
-<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/6b9e262c-b189-49f7-b648-d33d985a62ad" />
-<img width="1917" height="867" alt="image" src="https://github.com/user-attachments/assets/e515f73c-bc5a-4400-8242-e8a80de9320e" />
+<img width="1917" height="867" alt="image" src="https://github.com/user-attachments/assets/4a8c3124-9494-4522-84c8-6679ce8217fb" />
+<img width="1917" height="868" alt="image" src="https://github.com/user-attachments/assets/e4725d59-da3b-4d78-b131-5beefd9c8f0b" />
 
+### Saved Cases & Recent
+<img width="1917" height="867" alt="image" src="https://github.com/user-attachments/assets/73e0e3a8-86ca-4663-beab-7d2cfd42484f" />
+<img width="1917" height="868" alt="image" src="https://github.com/user-attachments/assets/74549075-a1be-4fb7-ac03-cde5d34196ad" />
+
+### Statistics
+<img width="1917" height="871" alt="image" src="https://github.com/user-attachments/assets/92acc4e2-d828-4038-8fc7-18f4d1f3491e" />
+<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/b19041a4-c701-4aca-ab55-2feccd2dbe46" />
 
 ---
 
