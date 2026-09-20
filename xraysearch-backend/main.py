@@ -6,7 +6,6 @@ GET  /health   — Health check + index status
 """
 import time
 import logging
-from pathlib import Path
 from fastapi import FastAPI, File, Form, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -15,52 +14,17 @@ from config import ALLOWED_ORIGINS, IMAGE_BASE_URL
 from embedder import embed_image
 from index import search, get_total_indexed
 from database import query_filtered_ids, get_patient_info
+from fastapi.staticfiles import StaticFiles
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-
-# ── Download data files from HF Space storage if missing ──────────────────────
-
-def ensure_data_files():
-    """Download data files from HF if not present (for HF Spaces Docker deployment)."""
-    from huggingface_hub import hf_hub_download
-
-    data_dir = Path("/app/data")
-    data_dir.mkdir(exist_ok=True)
-
-    repo_id = "loveyyyyyyyyy/xraysearch-backend"
-    files_to_check = [
-        "data/hnsw_index.bin",
-        "data/image_ids.json",
-        "data/nih_metadata.db",
-    ]
-
-    for repo_file in files_to_check:
-        local_path = Path("/app") / repo_file
-        if not local_path.exists():
-            logger.info(f"Downloading {repo_file} from HF Space...")
-            hf_hub_download(
-                repo_id=repo_id,
-                filename=repo_file,
-                repo_type="space",
-                local_dir="/app",
-                local_dir_use_symlinks=False,
-            )
-            logger.info(f"Downloaded {repo_file} successfully.")
-        else:
-            logger.info(f"{repo_file} already exists, skipping download.")
-
-ensure_data_files()
-
-
-# ── App setup ──────────────────────────────────────────────────────────────────
 
 app = FastAPI(
     title="XRaySearch API",
     description="Hybrid semantic search for chest X-rays using Google CXR ViT + HNSW.",
     version="1.0.0",
 )
+app.mount("/images", StaticFiles(directory="data/images"), name="images")
 
 app.add_middleware(
     CORSMiddleware,
